@@ -20,8 +20,10 @@
 	<div class="outer">
 		<div class="inner">
 			<img src="unicorn.jpg" width="200px" height="200px">
-			<div id="rnd">
-			</div>
+			<div id="rnd"></div>
+			<div id="host_txt"></div>
+			<div id="hostname_txt"></div>
+			<div id="href_txt"></div>			
 		</div>
 	</div>
 
@@ -33,6 +35,9 @@
 			num = num + " " + rnd;
 		}
 		document.getElementById("rnd").innerHTML = num;
+		document.getElementById("host_txt").innerHTML = "host:" + window.location.host;
+		document.getElementById("hostname_txt").innerHTML = "hostname:" + window.location.hostname;
+		document.getElementById("href_txt").innerHTML = "href:" + window.location.href;
 	</script>
 
 </body>
